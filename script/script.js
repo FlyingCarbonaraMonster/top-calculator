@@ -18,16 +18,12 @@ function operate(leftOperand, operator, rightOperand) {
     switch (operator) {
         case '+':
             return add(leftOperand, rightOperand);
-            break;
         case '-':
-            substract(leftOperand, rightOperand);
-            break;
+            return substract(leftOperand, rightOperand);
         case '*':
-            multiply(leftOperand, rightOperand);
-            break;
+            return multiply(leftOperand, rightOperand);
         case '/':
-            divide(leftOperand, rightOperand);
-            break;
+            return divide(leftOperand, rightOperand);
     }
 }
 
