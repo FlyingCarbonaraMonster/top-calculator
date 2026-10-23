@@ -17,7 +17,7 @@ function divide(a, b) {
 function operate(leftOperand, operator, rightOperand) {
     switch (operator) {
         case '+':
-            add(leftOperand, rightOperand);
+            return add(leftOperand, rightOperand);
             break;
         case '-':
             substract(leftOperand, rightOperand);
@@ -31,6 +31,18 @@ function operate(leftOperand, operator, rightOperand) {
     }
 }
 
+const container = document.querySelector("#container");
+const calcNums = document.querySelector("#calc-nums");
+
 let leftOperand;
 let operator;
 let rightOperand;
+const nums = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
+
+for (let num of nums) {
+    const numBtn = document.createElement("button");
+    numBtn.classList.add("btn");
+    numBtn.classList.add(`btn-${num}`);
+    numBtn.textContent = num;
+    calcNums.appendChild(numBtn);
+}

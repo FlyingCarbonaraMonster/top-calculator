@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 500px;
+}
+
+#screen {
+    width: 280px;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#calc-nums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    gap: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+}
+
+.btn-0 {
+    width: 70px;
+}
